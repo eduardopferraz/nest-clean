@@ -14,6 +14,9 @@ dependencies:
   '@nestjs/platform-express':
     specifier: ^11.0.1
     version: 11.1.6(@nestjs/common@11.1.6)(@nestjs/core@11.1.6)
+  '@prisma/client':
+    specifier: ^6.15.0
+    version: 6.15.0(typescript@5.9.2)
   reflect-metadata:
     specifier: ^0.2.2
     version: 0.2.2
@@ -756,6 +759,22 @@ packages:
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dev: true
+
+  /@prisma/client@6.15.0(typescript@5.9.2):
+    resolution: {integrity: sha512-wR2LXUbOH4cL/WToatI/Y2c7uzni76oNFND7+23ypLllBmIS8e3ZHhO+nud9iXSXKFt1SoM3fTZvHawg63emZw==}
+    engines: {node: '>=18.18'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+      typescript: '>=5.1.0'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      typescript: 5.9.2
+    dev: false
 
   /@rocketseat/eslint-config@2.2.2(eslint@9.34.0)(typescript@5.9.2):
     resolution: {integrity: sha512-kSWN4FOyhTEiD2O6OGL2OG89MHq8HSoDwOVvy6Xqdv1DytdMvOgZsD7xBYsAyYWvwD0P+YR1nIDluVGCV+GNxA==}
@@ -4575,7 +4594,6 @@ packages:
     resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /uid@2.0.2:
     resolution: {integrity: sha512-u3xV3X7uzvi5b1MncmZo3i2Aw222Zk1keqLA1YkHldREkAhAqi65wuPfe7lHx8H/Wzy+8CE7S7uS3jekIM5s8g==}
