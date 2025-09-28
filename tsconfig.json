@@ -21,6 +21,14 @@
     "noFallthroughCasesInSwitch": false,
     //"allowImportingTsExtensions": true,
     "noEmit": false,
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "vitest/globals"
+    ]
   }
 }
